@@ -1,0 +1,19 @@
+.nav {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  font-size: 11px;
+  background: white;
+  color: white;
+
+  .active {
+    color: $primary-color;
+  }
+
+  .dark & {
+    background: $dark-color;
+  }
+}

@@ -1,0 +1,53 @@
+.drawer {
+  // transition: bottom 0.3s ease-out;
+
+  .dark & {
+    background: $dark-4;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    cursor: pointer;
+  }
+
+  &__title {
+    padding: 21px 20px 19px 21px; // 21px 20px 19px 55px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    border-bottom: 1px solid $border-color;
+
+    .dark & {
+      border-bottom-color: $dark-border-color;
+    }
+
+    &--padded {
+      padding-left: 44px;
+    }
+  }
+
+  &__content {
+    // position: absolute;
+    // top: 65px;
+    // left: 0;
+    // bottom: 10px;
+    // right: 0;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--poi {
+    border-bottom: 1px solid $border-color;
+
+    .dark & {
+      border-bottom-color: #11111138;
+    }
+  }
+}
