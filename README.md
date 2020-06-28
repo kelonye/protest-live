@@ -1,6 +1,6 @@
-|                                          |                                          |
-| ---------------------------------------- | ---------------------------------------- |
-| ![](https://protest-live.surge.sh/a.png) | ![](https://protest-live.surge.sh/b.png) |
+|                                                |                                                |
+| ---------------------------------------------- | ---------------------------------------------- |
+| ![](https://protest-live.surge.sh/shots/a.png) | ![](https://protest-live.surge.sh/shots/b.png) |
 
 ### Idea
 
