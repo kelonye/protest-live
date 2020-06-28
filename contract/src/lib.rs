@@ -63,7 +63,8 @@ impl ProtestLive {
             Ok(h) => h,
             Err(e) => {
                 env::panic(
-                    format!("err registering poi(lng({}), lat({})): {}", lng, lat, e).as_bytes(),
+                    format!("err encoding coordinate(lng({}), lat({})): {}", lng, lat, e)
+                        .as_bytes(),
                 );
             }
         };
@@ -71,7 +72,8 @@ impl ProtestLive {
             Ok(h) => h,
             Err(e) => {
                 env::panic(
-                    format!("err registering poi(lng({}), lat({})): {}", lng, lat, e).as_bytes(),
+                    format!("err encoding coordinate(lng({}), lat({})): {}", lng, lat, e)
+                        .as_bytes(),
                 );
             }
         };
@@ -105,7 +107,8 @@ impl ProtestLive {
             Ok(h) => h,
             Err(e) => {
                 env::panic(
-                    format!("err registering poi(lng({}), lat({})): {}", lng, lat, e).as_bytes(),
+                    format!("err encoding coordinate(lng({}), lat({})): {}", lng, lat, e)
+                        .as_bytes(),
                 );
             }
         };
@@ -113,7 +116,8 @@ impl ProtestLive {
             Ok(h) => h,
             Err(e) => {
                 env::panic(
-                    format!("err registering poi(lng({}), lat({})): {}", lng, lat, e).as_bytes(),
+                    format!("err encoding coordinate(lng({}), lat({})): {}", lng, lat, e)
+                        .as_bytes(),
                 );
             }
         };
