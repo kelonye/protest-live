@@ -1,9 +1,9 @@
 export const DEFAULT_LOCATION = {
-  latitude: 43.57535983238083,
-  longitude: -98.32950532693054,
-  zoom: 2.9856091168168533,
   bearing: 0,
   pitch: 0,
+  latitude: 37.84354533116928,
+  longitude: -122.2826886172947,
+  zoom: 11,
 };
 
 export const {
