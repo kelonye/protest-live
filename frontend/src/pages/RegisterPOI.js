@@ -81,7 +81,7 @@ const Component = ({
 
     await createPOI(info);
     sl('success', 'Place was added!', 'Success', () => {
-      updateData({ category: info.category });
+      updateData({ activeView: { category: info.category } });
       navigate('/');
     });
   }
