@@ -62,10 +62,20 @@ function Component({ locationPathName, activeCategory, updateData }) {
 }
 
 export default withRouter(
-  connect(({ map: { activeView: { category: activeCategory } } }) => {
-    return {
-      locationPathName: window.location.pathname,
-      activeCategory,
-    };
-  }, mapDispatchToProps)(Component)
+  connect(
+    (
+      {
+        map: {
+          activeView: { category: activeCategory },
+        },
+      },
+      { match }
+    ) => {
+      return {
+        locationPathName: window.location.pathname,
+        activeCategory,
+      };
+    },
+    mapDispatchToProps
+  )(Component)
 );

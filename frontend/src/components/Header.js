@@ -46,14 +46,20 @@ function Component({ deactivateWallet, accountId, setIsAddingPOI }) {
                 });
               }}
             >
-              <UserIcon />
+              <div className={'flex flex--column flex--grow flex--align-end'}>
+                <UserIcon />
+                <div style={{ fontSize: 10 }}>{accountId}</div>
+              </div>
             </IconButton>
           </Tooltip>
         )}
 
         <Tooltip title="Add Place">
           <IconButton onClick={() => setIsAddingPOI(true)}>
-            <AddIcon className={classes.icon} />
+            <div className={'flex flex--column flex--grow'}>
+              <AddIcon className={classes.icon} />
+              <div style={{ fontSize: 10 }}>Add</div>
+            </div>
           </IconButton>
         </Tooltip>
       </Toolbar>
